@@ -1,0 +1,18 @@
+#track-info{
+    font-size:28px;
+    margin:10px;
+    text-align:center;
+}
+
+#play-pause-stop-flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.music-icon{
+    width:40px;
+}
+.music-button{
+    background:none;
+    border:none;
+}

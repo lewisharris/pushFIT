@@ -1,0 +1,33 @@
+
+h3{
+    text-align:left;
+    color: #75757B;
+    font-size:16px;
+    padding:0 10px;
+}
+
+hr{
+    width:90%;
+    border:solid 1px #393941;
+    background-color:#393941;
+    color:#393941;
+    margin:0 8px;
+    
+}
+.stats-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 10px;
+}
+
+.show-difficulty{
+    background:#F4B74B;
+    height:21px;
+    color:#303038;
+    font-weight:bold;
+    border-radius: 5px;
+    font-size:16px;
+    padding:5px;
+}
