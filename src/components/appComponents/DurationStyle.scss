@@ -1,0 +1,23 @@
+.duration-flex{
+    display:flex;
+    justify-content: space-between;
+    margin:0px 10px;
+    color:#5968EB;
+    font-weight: bold;
+    line-height: 20px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.duration-highlight{
+    background:#5968EB;
+    color:#303038;
+    min-width: 23px;
+    height:20px;
+    font-weight:bold;
+    font-size:16px;
+    padding:5px;
+    border-radius:5px;
+    text-align: center;
+    line-height:20px;
+}
