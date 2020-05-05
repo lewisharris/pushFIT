@@ -4,7 +4,7 @@ class StartWorkoutBtn extends React.Component {
 
     handleClick = (event) => {
         event.preventDefault();
-        this.props.toggle('Workout');
+        this.props.toggle('Intro');
         this.props.toggle('Review');
     }
 

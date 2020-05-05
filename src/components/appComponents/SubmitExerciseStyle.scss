@@ -9,7 +9,13 @@
     align-items:center;
     justify-content: center;
     border-radius:0px 10px 10px 0px;
+    outline:none;
 };
+
+.error-buttons{
+    @extend .submit-buttons;
+    filter:hue-rotate(232deg) saturate(700%);
+}
 
 #add-to-list{
     color:#7AD596;
@@ -26,12 +32,7 @@
     margin: auto 5px;
 }
 
-#add-to-list-icon{
-    width:20px;
-    margin:10px;
-}
-
-#view-workout-icon{
+#add-to-list-icon,#view-workout-icon{
     width:20px;
     margin:10px;
 }

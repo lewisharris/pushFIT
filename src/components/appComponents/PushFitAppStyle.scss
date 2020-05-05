@@ -1,3 +1,13 @@
+.app-container{
+    background: #27272f;
+    color:white;
+    font-family:'Varela-Round' sans-serif;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+};
+
 .leave-app{
     color:#A3A3A7;
     font-size:23px;
@@ -31,4 +41,20 @@ h1{
 button{
     cursor:pointer;
 
+}
+
+
+@media only screen and (max-width:400px){
+    h1{
+        font-size:16px;
+        color:#A3A3A7;
+    }
+
+    .leave-app{
+        display:none
+    };
+
+    .main-logo{
+        display:none;
+    }
 }

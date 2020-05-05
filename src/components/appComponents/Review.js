@@ -15,7 +15,7 @@ class Review extends React.Component {
         return(
             <div style={reviewStyle}>
                 <h1>View Workout</h1>
-                <ReviewDashboard    workoutArray = {this.props.workoutArray}
+                <ReviewDashboard    list = {this.props.list}
                                     setRest = {this.props.setRest}
                                     rest = {this.props.rest}
                                     increment = {this.props.increment}

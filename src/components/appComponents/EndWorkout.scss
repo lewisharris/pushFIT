@@ -1,0 +1,19 @@
+.end-workout{
+    width:80%;
+    max-width:400px;
+    height:46px;
+    background:#ED747D;
+    color:#303038;
+    border:none;
+    font-size:20px;
+    font-weight:bold;
+    border-radius: 5px;
+    margin:10px auto;
+    box-shadow: inset 4px 4px 4px rgba(255,255,255,0.2);
+}
+
+.end-workout:hover{
+    background:#BF5C63;
+    box-shadow: inset 4px 4px 4px rgba(255,255,255,0.1);
+    transition: all 0.2s ease-in-out;
+};

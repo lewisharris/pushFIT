@@ -1,3 +1,17 @@
+
+
+.form-style {
+            background:#303038;
+            max-width:400px;
+            min-height:400px;
+            border-radius:10px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            margin:10px auto;
+            text-align:center;
+};
+
 #input-title{
     font-size:16px;
     font-weight:bold;
@@ -20,4 +34,10 @@
 
 #form-line-break{
     margin:40px auto;
+}
+
+@media only screen and (max-width:400px){
+    .form-style {
+        margin:10px;
+    }
 }

@@ -12,9 +12,10 @@ class WorkoutStats extends React.Component {
         }
     }
     calcDifficulty () {
-        const workoutTime = this.props.workoutArray.map(e => {return e.duration}).reduce((a,b)=> {return a+ b},0);
-        const rest = this.props.rest * this.props.workoutArray.length;
-        const diff = workoutTime - rest;
+        const {list,rest} = this.props;
+        const workoutTime = list.map(e => {return e.duration}).reduce((a,b)=> {return a+ b},0);
+        const totalRest = rest * list.length;
+        const diff = workoutTime - totalRest;
         if(diff <= -30 ){
             return 'easy';
         }
@@ -65,7 +66,8 @@ class WorkoutStats extends React.Component {
                 </div>
                 <div className='stats-flex'>
                     <h4>Total Duration</h4>
-                    <TotalDuration totalDur = {this.formatTime(this.props.totalDur)}/>
+                    <TotalDuration  rest={this.props.rest}
+                                    list = {this.props.list}/>
                 </div>
             </div>
         )
