@@ -12,8 +12,11 @@ class SubmitExercise extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         this.props.createExercise();
-        this.setState({buttonText:'Added to Workout'})
-        setTimeout(() => this.setState({buttonText:'Add Exercise'}),2000)
+        {(this.props.exercise !== 'Enter an Exercise')?
+            this.setState({buttonText:'Exercise Added!'})
+        :
+        this.setState({buttonText : 'Enter an Exercise'})}
+        this.buttonChange()
     };
 
     handleToggle = (event) => {
@@ -22,14 +25,21 @@ class SubmitExercise extends React.Component {
         this.props.toggle('Input');
     }
 
+    buttonChange = () => {
+        setTimeout(() => this.setState({buttonText:'Add Exercise'})
+        ,500)};
+
+    componentWillUnmount(){
+        clearTimeout(this.buttonChange)
+    }
+
     render(){
         const submitExerciseStyle = {
                 background:'#303038',
-                minWidth:300,
                 maxWidth:400,
                 display:'flex',
                 flexDirection:'row',
-                justifyContent:'space-around',
+                justifyContent:'space-evenly',
                 height:58,
                 margin:'0px auto',
                 paggin:10,
@@ -38,7 +48,11 @@ class SubmitExercise extends React.Component {
         }
         return(
             <div style={submitExerciseStyle}>
-                <button className="submit-buttons"  id="add-to-list" onClick={this.handleSubmit} type="submit" form="input-form">
+                <button className={(this.state.buttonText ==="Enter an Exercise")?"error-buttons":'submit-buttons'}  
+                                                                id="add-to-list" 
+                                                                onClick={this.handleSubmit} 
+                                                                type="submit" 
+                                                                form="input-form">
                     <object id="add-to-list-icon" type="image/svg+xml" data="images/add-to-list-icon.svg">
                             <img src="images/add-to-list-icon.svg" alt="add-to-list"></img>
                     </object>               

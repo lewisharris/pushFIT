@@ -1,6 +1,7 @@
 import React from 'react';
 import InputForm from './InputForm';
 import SubmitExercise from './SubmitExercise';
+import './InputStyle.scss';
 
 class Input extends React.Component {
     constructor(props){
@@ -70,23 +71,18 @@ class Input extends React.Component {
             width:'100%',
             margin:'0px auto'
         }
-        const inputHeaderStyle = {
-            fontSize:24,
-            fontWeight:'bold',
-            color:'#A3A3A7',
-            margin:'0 auto'
-        }
         return(
             <div style={inputStyle}>
                 <h1>Build Your Workout</h1>
-                <h2 style={inputHeaderStyle}>New Exercise</h2>
+                <h2 className='input-header-style'>New Exercise</h2>
                 <InputForm  handleInput = {this.handleInput}
                             inputValue = {this.state.exercise}
                             durationValue = {this.state.duration}
                             increment = {this.increment}
                             decrement = {this.decrement}/>
                 <SubmitExercise createExercise ={this.createExercise}
-                                toggle = {this.props.toggle}/>
+                                toggle = {this.props.toggle}
+                                exercise = {this.state.exercise}/>
             </div>
         )
     }

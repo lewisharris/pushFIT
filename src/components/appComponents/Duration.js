@@ -51,7 +51,8 @@ class Duration extends React.Component {
                 <hr></hr>
                 <div className="duration-flex">
                     <p>Total Duration</p>
-                    <TotalDuration  totalDur = {this.formatTime(this.props.totalDur)}/>
+                    <TotalDuration  rest = {this.props.rest}
+                                    list = {this.props.list}/>
                 </div>
                 <div className="duration-flex">
                     <p>Elapsed Time</p>

@@ -28,11 +28,11 @@ class ReviewDashboard extends React.Component {
         return(
             <div style={reviewDashboardStyle}>
                 <div>
-                    <WorkoutList        workoutArray = {this.props.workoutArray}
+                    <WorkoutList        list = {this.props.list}
                                         delete = {this.props.delete}/>
                 </div>
                 <div style={flexRightStyle}>
-                    <WorkoutStats       workoutArray = {this.props.workoutArray}
+                    <WorkoutStats       list = {this.props.list}
                                         setRest = {this.props.setRest}
                                         rest = {this.props.rest}
                                         increment = {this.props.increment}

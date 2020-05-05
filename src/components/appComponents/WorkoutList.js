@@ -17,7 +17,7 @@ class WorkoutList extends React.Component {
             padding:'0,0,0,0'
     }
 
-        const list = this.props.workoutArray.map(item => {
+        const list = this.props.list.map(item => {
                 return  <li className="exercise-list-item" key={item.key}>
                             <p className="exercise-text">{item.exercise} </p>
                             <div className="duration-circle">{item.duration}</div>
@@ -36,6 +36,7 @@ class WorkoutList extends React.Component {
                     <h3>Time (s)</h3>
                 </div>
                 <hr></hr>
+                {(this.props.list.length === 0)? <p>Workout Empty</p> : null}
                 <ul>
                     {list}
                 </ul>

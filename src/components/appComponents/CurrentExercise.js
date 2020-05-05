@@ -4,14 +4,7 @@ import "./CurrentExerciseStyle.scss";
 
 class CurrentExercise extends React.Component {
 
-    nextExercise = () => {
-        if(this.props.progress >= this.props.list.length -1){
-            return 'Last Exercise';
-        }
-        else{
-            return `Next Exercise: ${this.props.list[this.props.progress + 1].exercise}`;
-        }
-    }
+
     render(){
         const currentExerciseStyle = {
             background:'#303038',
@@ -29,7 +22,7 @@ class CurrentExercise extends React.Component {
         return(
            <div style={currentExerciseStyle}>
                     <h1>{this.props.currentExercise}</h1>
-                    <h2>{this.nextExercise()}</h2>
+                    <h2></h2>
                 <div>
                     <div id="exercise-progress-container">
                         <div className="current-exercise-bar-outer-container">
@@ -40,8 +33,7 @@ class CurrentExercise extends React.Component {
                                                 size = {200}
                                                 strokeWidth = {10}
                                                 circleOneStroke = '#5FFF90'
-                                                circleTwoStroke = '#E83744'
-                                                />
+                                                circleTwoStroke = '#E83744'/>
                             </div>
                         </div>
                     </div>

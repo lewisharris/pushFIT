@@ -1,4 +1,5 @@
 import React from 'react';
+import './EndWorkout.scss';
 
 
 class EndWorkout extends React.Component {
