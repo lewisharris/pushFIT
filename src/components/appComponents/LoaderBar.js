@@ -1,4 +1,5 @@
 import React from 'react';
+import './LoaderBar.scss';
 
 class LoaderBar extends React.Component {
     constructor(props){
@@ -17,7 +18,11 @@ class LoaderBar extends React.Component {
 
     render(){
         return(
-            <div className="loader-main">Get Ready. Starting in {this.state.count}</div>
+            <div className="loader-main">
+                <h2>Get Ready. Starting in </h2>
+                <p className="loader-countdown">{this.state.count}</p>
+                <div className="loader"></div>
+            </div>
         )
     }
 };

@@ -12,11 +12,12 @@ class SubmitExercise extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         this.props.createExercise();
-        {(this.props.exercise !== 'Enter an Exercise')?
+        (this.props.exercise !== 'Enter an Exercise')?
             this.setState({buttonText:'Exercise Added!'})
         :
-        this.setState({buttonText : 'Enter an Exercise'})}
-        this.buttonChange()
+        this.setState({buttonText : 'Enter an Exercise'})
+        this.buttonChange = setTimeout(() => this.setState({buttonText:'Add Exercise'})
+        ,500);
     };
 
     handleToggle = (event) => {
@@ -25,29 +26,13 @@ class SubmitExercise extends React.Component {
         this.props.toggle('Input');
     }
 
-    buttonChange = () => {
-        setTimeout(() => this.setState({buttonText:'Add Exercise'})
-        ,500)};
-
     componentWillUnmount(){
         clearTimeout(this.buttonChange)
     }
 
     render(){
-        const submitExerciseStyle = {
-                background:'#303038',
-                maxWidth:400,
-                display:'flex',
-                flexDirection:'row',
-                justifyContent:'space-evenly',
-                height:58,
-                margin:'0px auto',
-                paggin:10,
-                borderRadius:10,
-                border:'none'
-        }
         return(
-            <div style={submitExerciseStyle}>
+            <div className="submit-exercise">
                 <button className={(this.state.buttonText ==="Enter an Exercise")?"error-buttons":'submit-buttons'}  
                                                                 id="add-to-list" 
                                                                 onClick={this.handleSubmit} 

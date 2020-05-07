@@ -1,7 +1,18 @@
+p{
+    color:#75757B;;
+}
 h3{
     text-align:left;
     color: #75757B;
     font-size:16px;
+    padding:0;
+}
+
+.workout-list{
+    min-width:324px;
+    background:#303038;
+    border-radius:10px;
+    margin:0px 5px;
     padding:0;
 }
 
@@ -65,4 +76,10 @@ ul{
 .delete-icon{
     width:27px;
     pointer-events: none;
+}
+
+@media only screen and (max-width:900px) and (orientation: landscape){
+    .workout-list{
+        min-width:90vw;
+    }
 }

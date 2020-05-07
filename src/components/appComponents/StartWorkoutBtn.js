@@ -1,31 +1,46 @@
 import React from 'react';
+import "./StartWorkoutBtn.scss";
 
 class StartWorkoutBtn extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            btnMessage: 'Start Workout'
+        }
+    }
+
+    notifyEmptyWorkout = () => {
+        this.setState({btnMessage: 'Empty Workout'})
+    };
+
+    revertBtn = () => {setTimeout( () => {this.setState({btnMessage: 'Start Workout'})},500)}
 
     handleClick = (event) => {
+        if(this.props.list.length === 0){
+        this.notifyEmptyWorkout();
+        this.revertBtn();
+        return}
+        else{
         event.preventDefault();
         this.props.toggle('Intro');
         this.props.toggle('Review');
+        }
+    }
+
+    componentWillUnmount(){
+        clearTimeout(this.revertBtn)
     }
 
     render(){
-        const startWorkoutBtnStyle = {
-            gridArea:'start-workout',
-            width:324,
-            height:88,
-            background:'#7AD596',
-            border:'none',
-            padding:0,
-            fontSize:27,
-            fontWeight:'bold',
-            borderRadius:10,
-            color:'#303038',
-            margin:5,
-            boxShadow: 'inset 4px 4px 4px rgba(255,255,255,0.3)',
-            cursor:'pointer'
-        }
+
         return(
-            <button style={startWorkoutBtnStyle} className="start-workout" type="button" onClick={this.handleClick}>Start Workout</button>
+            <button     className={(this.state.btnMessage === "Start Workout")?"start-workout":"start-workout-fail"} 
+                        type="button" 
+                        onClick={this.handleClick}>
+
+                {this.state.btnMessage}
+
+            </button>
         )
     }
 }

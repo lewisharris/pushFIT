@@ -34,3 +34,10 @@ input[type=number]::-webkit-outer-spin-button {
     color:#303038;
     pointer-events: none
 }
+
+
+@media only screen and (max-width:900px) and (orientation: landscape){
+    .inc-dec{
+        margin:10px auto 20px auto;
+    }
+}

@@ -38,18 +38,8 @@ class WorkoutStats extends React.Component {
     }
 
     render(){
-        const workoutStatsStyle = {
-            background:'#303038',
-            borderRadius:15,
-            color:'#5968EB',
-            display:'flex',
-            flexDirection:'column',
-            minWidth:324,
-            margin:5,
-            flexGrow:'0'
-        }
         return(
-            <div className="stats" style={workoutStatsStyle}>
+            <div className="stats">
                 <h3>Workout Stats</h3>
                 <hr></hr>
                 <div className='stats-flex'>

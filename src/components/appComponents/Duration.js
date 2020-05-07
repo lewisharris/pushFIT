@@ -10,12 +10,10 @@ class Duration extends React.Component {
         }
     };
 
-    increaseElapsed = () => {
-        setInterval(() => {this.setState({count: this.state.count + 1})},1000)
-    };
-
     resetClock = () => {
+        clearInterval(this.increaseElapsed);
         this.setState({count:0})
+        
     };
 
     formatTime = (secs) => {
@@ -25,28 +23,16 @@ class Duration extends React.Component {
     };
 
     componentDidMount(){
-        this.increaseElapsed();
+        this.increaseElapsed = setInterval(() => {this.setState({count: this.state.count + 1})},1000)
     };
 
     componentWillUnmount(){
-        clearInterval(this.increaseElapsed);
         this.resetClock();
     };
 
     render(){
-        // Style for component can be found below for quick access. 
-        // All styling for children are to be found on relevant stylesheet
-        const durationStyle = {
-            width:324,
-            display:'flex',
-            flexDirection:'column',
-            background:'#303038',
-            borderRadius:10,
-            margin:10,
-            flexGrow:'2'
-        }
         return(
-            <div style={durationStyle}>
+            <div className="duration-style">
                 <h3>Workout Stats</h3>
                 <hr></hr>
                 <div className="duration-flex">

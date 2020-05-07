@@ -1,3 +1,13 @@
+.stats {
+    background:#303038;
+    border-radius:10px;
+    color:#5968EB;
+    display:flex;
+    flex-direction:column;
+    flex-grow:0;
+    margin:0px 0px 5px 5px;
+}
+
 
 h3{
     text-align:left;
@@ -11,8 +21,7 @@ hr{
     border:solid 1px #393941;
     background-color:#393941;
     color:#393941;
-    margin:0 8px;
-    
+    margin:0 8px; 
 }
 .stats-flex{
     display:flex;
@@ -30,4 +39,16 @@ hr{
     border-radius: 5px;
     font-size:16px;
     padding:5px;
+};
+
+@media only screen and (max-width:450px){
+    .stats-flex{
+
+    }
+}
+
+@media only screen and (max-width:900px) and (orientation: landscape){
+    .stats{
+        min-width:90vw;
+    }
 }
