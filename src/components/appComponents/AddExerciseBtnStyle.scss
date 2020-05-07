@@ -1,0 +1,36 @@
+.add-exercise-btn-style{
+    width:324px;
+    background:#303038;
+    color:#4E5AC2;
+    font-weight:bold;
+    height:57px;
+    font-size:16px;
+    border-radius:10px;
+    border:none;
+    margin:5px;
+    cursor:pointer;
+}
+
+.add-exercise-svg{
+    width:27px;
+    margin:10px;
+    vertical-align:middle;
+}
+
+@media only screen and (max-width:450px){
+    .add-exercise-btn-style{
+        height:50px;
+        line-height:36px;
+    }
+
+    .add-exercise-svg{
+        width:18px;
+        margin:auto 10px;
+    }
+}
+
+@media only screen and (max-width:900px) and (orientation: landscape){
+    .add-exercise-btn-style{
+        min-width:90vw;
+    }
+}

@@ -1,5 +1,5 @@
 .end-workout{
-    width:80%;
+    width:60%;
     max-width:400px;
     height:46px;
     background:#ED747D;
@@ -9,7 +9,6 @@
     font-weight:bold;
     border-radius: 5px;
     margin:10px auto;
-    box-shadow: inset 4px 4px 4px rgba(255,255,255,0.2);
 }
 
 .end-workout:hover{
@@ -17,3 +16,10 @@
     box-shadow: inset 4px 4px 4px rgba(255,255,255,0.1);
     transition: all 0.2s ease-in-out;
 };
+
+@media only screen and (max-width:450px){
+    .end-workout{
+        width:auto;
+        margin: 0px;
+    }
+}

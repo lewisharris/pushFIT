@@ -1,0 +1,40 @@
+.clear-all {
+    width:324px;
+    height:58px;
+    line-height:58px;
+    color:#ED747D;
+    background:#303038;
+    font-size:16px;
+    border-radius:10px;
+    border:none;
+    font-weight:bold;
+    justify-content:center;
+    margin:5px;
+    cursor:pointer;
+}
+.clear-workout-svg {
+    width:27px;
+    margin:10px;
+    vertical-align:middle;
+}
+
+
+@media only screen and (max-width:450px){
+
+    .clear-workout-svg {
+        width:18px;
+        margin:auto 10px;
+    }
+
+    .clear-all{
+        height:50px;
+        font-size:16px;
+        line-height:50px;
+    }
+};
+
+@media only screen and (max-width:900px) and (orientation: landscape){
+    .clear-all{
+        min-width:90vw;
+    }
+}

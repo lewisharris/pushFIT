@@ -7,21 +7,10 @@ class Completion extends React.Component {
 
 
     render(){
-        const completionStyle = {
-            width:324,
-            background:'#303038',
-            minWidth:324,
-            borderRadius:10,
-            display:'flex',
-            flexDirection:'column',
-            margin:10,
-            flexGrow:'1'
-        }
-
         const suffix = `/${this.props.list.length}`;
 
         return(
-            <div style={completionStyle}>
+            <div className = "completion-style">
                 <h3>Completion</h3>
                 <hr></hr>
                 <div id="progress-container">

@@ -10,7 +10,6 @@ class ReviewDashboard extends React.Component {
 
     render(){
         const reviewDashboardStyle = {
-            minWidth:326,
             margin:'0px auto',
             display: 'flex',
             flexDirection:'row',
@@ -23,7 +22,6 @@ class ReviewDashboard extends React.Component {
             display:"flex",
             flexDirection:"column",
             flexGap:10,
-            minWidth:324,
         }
         return(
             <div style={reviewDashboardStyle}>
@@ -40,7 +38,8 @@ class ReviewDashboard extends React.Component {
                                         totalDur = {this.props.totalDur}/>
                     <AddExerciseBtn     toggle = {this.props.toggle}/>
                     <ClearWorkoutBtn    clearWorkout = {this.props.clearWorkout}/>
-                    <StartWorkoutBtn    toggle = {this.props.toggle}/>
+                    <StartWorkoutBtn    toggle = {this.props.toggle}
+                                        list = {this.props.list}/>
                 </div>
             </div>
         )

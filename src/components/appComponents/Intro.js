@@ -1,5 +1,6 @@
 import React from 'react';
-import LoaderBar from './LoaderBar'
+import LoaderBar from './LoaderBar';
+import './Intro.scss';
 
 class Intro extends React.Component {
 
@@ -8,26 +9,18 @@ class Intro extends React.Component {
             this.props.toggle('Workout')
             this.props.toggle('Intro')
         },5000);
+
+        this.props.setFirstExerciseTime();
     }
 
     componentWillUnmount(){
         clearTimeout(this.timer)
     }
 
-    render(){
-        const introStyle = {
-            height:'100vh',
-            width:'100vw'
-        }
-        const loaderHeaderStyle = {
-            margin:'50px auto',
-            textAlign:'center',
-            fontSize:60
-        }
-        
+    render(){        
         return(
-            <div style={introStyle}>
-                <h1 style={loaderHeaderStyle}>pushFit</h1>
+            <div className='intro-style'>
+                <h1 className='loader-header-style'>pushFit</h1>
                 <LoaderBar toggle = {this.props.toggle}/>
             </div>
         )

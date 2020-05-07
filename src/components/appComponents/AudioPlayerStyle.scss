@@ -1,3 +1,29 @@
+h3{
+    text-align:left;
+    color: #75757B;
+    font-size:16px;
+    padding:0 10px;
+    width:90%;
+}
+
+
+.audio-player{
+            background:#303038;
+            margin:10px;
+            flex-grow:2;
+            border-radius:10px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:flex-start;
+            box-sizing:border-box;
+            border: 5px solid #303038;
+            box-shadow: -5px -5px 5px rgba(255,255,255,0.05),
+                        inset -5px -5px 5px rgba(255,255,255,0.05),
+                        5px 5px 5px rgba(0,0,0,0.3),
+                        inset 5px 5px 5px rgba(0,0,0,0.3);
+        }
+
 #track-info{
     font-size:28px;
     margin:10px;
@@ -7,12 +33,31 @@
 #play-pause-stop-flex{
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
+    margin:10px auto 20px auto;
 }
 .music-icon{
     width:40px;
+
 }
 .music-button{
+    height:60px;
     background:none;
+    margin:auto 20px;
+    border-radius: 50%;
     border:none;
+    border: 3px solid #303038;
+    box-shadow: -5px -5px 5px rgba(255,255,255,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.05),
+                5px 5px 5px rgba(0,0,0,0.3),
+                inset 5px 5px 5px rgba(0,0,0,0.3);
 }
+
+.music-button:active{
+    border: 3px solid #303038;
+    box-shadow: -2px -2px 2px rgba(255,255,255,0.05),
+                inset -2px -2px 2px rgba(255,255,255,0.05),
+                2px 2px 2px rgba(0,0,0,0.3),
+                inset 2px 2px 2px rgba(0,0,0,0.3);
+}
+

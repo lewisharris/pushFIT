@@ -13,6 +13,7 @@ class PushFitApp extends React.Component {
             rest : 30, // chosen rest period between exercises
             TotalRest : null, // total rest period
             totalDuration:0,
+            firstExerciseLength:30,
             Input:true,
             Review:false,
             Workout:false,
@@ -40,12 +41,9 @@ class PushFitApp extends React.Component {
     };
 
     increment = (event) =>{// Increase the rest duration by 1
-        if(this.state.rest === 0){return
-        }
-        else{
         this.setState(
             {rest: this.state.rest + 1}
-        )};
+        );
     };
 
     decrement = (event) =>{ // Decrease the rest duration by 1
@@ -87,6 +85,15 @@ class PushFitApp extends React.Component {
         this.setState({totalDuration: restPeriod + totalExercise})
     };
 
+    setFirstExerciseTime = () => {
+        if(this.state.workoutArray.length !== 0){
+            this.setState({firstExerciseLength: this.state.workoutArray[0].duration})
+        }
+        else{
+            return
+        }
+    }
+
     render(){
         return(
             <div className='app-container'>
@@ -113,7 +120,8 @@ class PushFitApp extends React.Component {
                         toggle = {this.toggleState}/>
                 }
                 
-                {(this.state.Intro === false)? null : <Intro toggle = {this.toggleState}/>
+                {(this.state.Intro === false)? null : <Intro    toggle = {this.toggleState}
+                                                                setFirstExerciseTime = {this.setFirstExerciseTime}/>
                 }
                 {(this.state.Workout === false) ? null
                 :
@@ -122,7 +130,8 @@ class PushFitApp extends React.Component {
                             rest = {this.state.rest} 
                             totalDur = {this.state.totalDuration}
                             totalRest = {this.state.TotalRest}
-                            endWorkout = {this.endWorkout}          
+                            endWorkout = {this.endWorkout} 
+                            firstExerciseLength = {this.state.firstExerciseLength}         
                             />
                 }
             </div>

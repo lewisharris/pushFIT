@@ -1,3 +1,22 @@
+
+
+.duration-style{
+    width:324px;
+    display:flex;
+    flex-direction:column;
+    background:#303038;
+    border-radius:10px;
+    margin:10px;
+    flex-grow:2;
+    box-sizing:border-box;
+    border: 5px solid #303038;
+    box-shadow: -5px -5px 5px rgba(255,255,255,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.05),
+                5px 5px 5px rgba(0,0,0,0.3),
+                inset 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+
 .duration-flex{
     display:flex;
     justify-content: space-between;
