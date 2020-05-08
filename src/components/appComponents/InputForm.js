@@ -12,6 +12,10 @@ class InputForm extends React.Component {
         this.inputRef.current.focus();
     }
 
+    componentDidUpdate(){
+        this.inputRef.current.focus();
+    }
+
     render(){
         return(
             <form className="form-style" name="exercise" id="input-form">

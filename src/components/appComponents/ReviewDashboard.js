@@ -20,15 +20,12 @@ class ReviewDashboard extends React.Component {
 
         const flexRightStyle = {
             display:"flex",
-            flexDirection:"column",
-            flexGap:10,
+            flexDirection:"column"
         }
         return(
             <div style={reviewDashboardStyle}>
-                <div>
-                    <WorkoutList        list = {this.props.list}
+                <WorkoutList            list = {this.props.list}
                                         delete = {this.props.delete}/>
-                </div>
                 <div style={flexRightStyle}>
                     <WorkoutStats       list = {this.props.list}
                                         setRest = {this.props.setRest}

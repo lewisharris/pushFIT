@@ -1,19 +1,42 @@
 p{
     color:#75757B;;
 }
-h3{
-    text-align:left;
-    color: #75757B;
-    font-size:16px;
-    padding:0;
+
+.time-header{
+    text-align:right;
+    margin-right: 19%;
 }
 
+.workout-list-scroller{
+    overflow:scroll;
+    position: relative;
+    height:85%;
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+    padding:0px;
+    box-shadow: inset 3px 30px 10px 0 #303038;
+}
 .workout-list{
-    min-width:324px;
+    box-sizing:border-box;
+    min-width:60vw;
     background:#303038;
     border-radius:10px;
     margin:0px 5px;
-    padding:0;
+    padding-bottom:30px;
+    max-height: 470px;
+    overflow: hidden;
+    position: relative;
+}
+.workout-list::after
+{
+ box-shadow: inset 0px -30px 10px 0 #303038;
+ content: '';
+ display: block;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ pointer-events: none;
 }
 
 
@@ -21,7 +44,7 @@ h3{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    padding-right:80px;
+    flex-grow: 2;
 }
 
 ul{
@@ -46,7 +69,7 @@ ul{
     flex-grow: 2;
     padding:0px 20px;
 }
-.duration-circle {
+@mixin duration-circle{
     width:44px;
     height:44px;
     background:#7AD596;
@@ -55,9 +78,23 @@ ul{
     font-weight: bold;
     border-radius:22px;
     font-size:20px;
-    margin-right:50px;
+    margin-right:10vw;
     margin-left:10px;
     flex-shrink: 0;
+}
+
+.duration-circle-green{
+    @include duration-circle;
+    background:#7AD596;
+}
+.duration-circle-orange{
+    @include duration-circle;
+    background:#F4B74B;
+}
+
+.duration-circle-red{
+    @include duration-circle;
+    background:#ED747D;
 }
 
 .cancel-button{
@@ -78,8 +115,19 @@ ul{
     pointer-events: none;
 }
 
+@media only screen and (max-width:450px){
+    .workout-list{
+        flex-grow: 2;
+        margin:10px 0px;
+        max-height:350px;
+    }
+}
+
 @media only screen and (max-width:900px) and (orientation: landscape){
     .workout-list{
         min-width:90vw;
+        flex-grow: 2;
+        margin:10px 15px;
+        max-height:350px;
     }
 }
