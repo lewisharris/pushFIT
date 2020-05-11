@@ -1,0 +1,67 @@
+ul{
+    padding:0px 10px 10px 10px;
+    margin-bottom:10px;
+}
+
+.exercise-list-item{
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    border-bottom: solid 2px #393941;
+    padding:0px 10px;
+}
+.exercise-text{
+    font-size:26px;
+    line-height:22px;
+    min-width:50%;
+    text-align: left;
+    flex-grow: 2;
+    padding:0px 20px;
+}
+@mixin duration-circle{
+    width:44px;
+    height:44px;
+    background:#7AD596;
+    color:white;
+    line-height:44px;
+    font-weight: bold;
+    border-radius:22px;
+    font-size:20px;
+    margin-right:10vw;
+    margin-left:10px;
+    flex-shrink: 0;
+}
+
+.duration-circle-green{
+    @include duration-circle;
+    background:#7AD596;
+}
+.duration-circle-orange{
+    @include duration-circle;
+    background:#F4B74B;
+}
+
+.duration-circle-red{
+    @include duration-circle;
+    background:#ED747D;
+}
+
+.cancel-button{
+    border:none;
+    padding:0;
+    margin:0;
+    background:none;
+    cursor:pointer;
+    transition: all 0.2s ease-in-out;
+}
+.cancel-button:hover{
+    filter: hue-rotate(120deg);
+
+}
+
+.delete-icon{
+    width:27px;
+    pointer-events: none;
+}

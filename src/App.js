@@ -13,7 +13,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Home/>
-        <PushFitApp/>
+    {/*<PushFitApp/>*/}
       </div>
     );
   }
