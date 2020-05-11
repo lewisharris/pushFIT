@@ -96,7 +96,6 @@ class Workout extends React.Component {
 
     render(){
         const workoutStyle = {
-            minWidth:326,
             maxWidth:1200,
             background:'#27272F',
             display:'flex',
