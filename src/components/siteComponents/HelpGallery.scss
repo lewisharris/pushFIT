@@ -1,0 +1,108 @@
+.gallery-container{
+    margin:0px auto;
+    height:100%;
+    width:100%;
+    position: relative;
+}
+
+.gallery-header{
+    color:white;
+    font-size:18px;
+    text-align: center;
+    padding:0px;
+    margin:10px auto;
+}
+
+.gallery-image{
+    width:60%;
+    border:solid 2px yellow;
+    margin:20px;
+}
+
+.gallery-text{
+    color:white;
+    font-size:14px;
+    text-align: center;
+    padding:0px;
+    margin-top:100px;
+}
+
+@mixin gallery-btn {
+    background:rgba(255,255,255,0.2);
+    border:none;
+    padding:19px;
+    margin:20px;
+    border-radius: 500px;
+    width:50px;
+    height:50px;
+    overflow: hidden;
+    
+}
+.gallery-btn-prev{
+    @include gallery-btn;
+    transform:rotate(90deg);
+    position: absolute;
+    left:0px;
+    top:40%;
+};
+
+.gallery-btn-next{
+    @include gallery-btn;
+    transform:rotate(-90deg);
+    position: absolute;
+    right:0px;
+    top:40%;
+}
+
+
+@mixin pseudoInset{
+    margin:0px;
+    content:'';
+    position: absolute;
+    top:0px;
+    height:0%;
+    width:100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.gallery-btn-prev::after{
+    @include pseudoInset;
+    left:0px;
+}
+
+.gallery-btn-next::after{
+    @include pseudoInset;
+    right:0px;
+}
+
+.gallery-btn-prev:hover::after{
+    background:rgba(255,255,255,0.3);
+    height:100%;
+}
+
+.gallery-btn-next:hover::after{
+    background:rgba(255,255,255,0.3);
+    height:100%;
+}
+
+
+@mixin button-icon {
+    width:10px;
+    height:10px;
+    border-bottom:solid 2px white;
+    border-left:solid 2px white;
+    z-index:2;
+}
+
+.button-icon-prev{
+    @include button-icon;
+    transform:rotate(315deg);
+    transform-origin:center;
+}
+
+.button-icon-next{
+    @include button-icon;
+    transform:rotate(-45deg);
+    transform-origin:center;
+}
+

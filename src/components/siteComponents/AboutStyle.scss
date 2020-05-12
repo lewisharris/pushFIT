@@ -1,0 +1,92 @@
+
+.media-options-flex-container{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    background:#FAFBFB;
+}
+
+.media-options-flex{
+    max-width:100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background:#FAFBFB;
+    margin:50px auto;
+}
+
+.media-options-header{
+    text-align:center;
+    margin:5vmin;
+    font-size:32px;
+    color:#27272F;
+}
+
+@mixin section-head{
+    margin:0px auto;
+    color:#FAFBFB;
+    text-align: center;
+    font-size:40px;
+    padding:0px 10vw 50px 10vw;
+    text-align: center;
+}
+
+.section-header{
+    @include section-head;
+}
+
+.section-header-dark{
+    @include section-head;
+    color:#27272F;
+}
+
+@mixin section-style{
+    padding:80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.section-dark{
+    @include section-style;
+    background: #27272F;
+}
+
+.section-light{
+    @include section-style;
+    background:#FAFBFB;
+}
+
+.section-color{
+    @include section-style;
+    background:#4E5AC2;
+}
+
+.section-light-text{
+    color:#FAFBFB;
+    padding:50px auto;
+    margin:0px auto;
+    text-align: center;
+    font-size:24px;
+    max-width:600px;
+    line-height:1.5;
+}
+
+.section-image{
+    max-width:700px;
+    width:70%;
+    margin:0px auto 30px auto;
+}
+
+
+@media only screen and (max-width:400px){
+    .section-header, .section-header-dark{
+        font-size:30px;
+    }
+    .section-light-text{
+        font-size:16px;
+    }
+}
