@@ -1,31 +1,66 @@
 nav{
         width:100vw;
-        height:90px;
+        height:10vh;
+        max-height:80px;
         background:#4E5AC2;
         color:#FAFBFB;
         padding:0px;
         margin:0px;
 };
 
+.logo{
+    height:100%;
+    position:absolute;
+    top:1.8vh;
+    left:20px;
+    font-size:30px;
+}
+.site-logo{
+    width:50px;
+    vertical-align: middle;
+    margin-right:10px;
+}
+
 .navbar-list{
     display: flex;
     justify-content: flex-end;
     list-style-type:none;
     height:100%;
+    padding:0px;
+    margin:0px;
     margin-right:5vw;
     align-items: center;
 }
 
-.navbar-list-item{
+.navbar-list-item, .navbar-list-item a{
     margin:0px 20px;
     padding:0px;
-    font-size:28px;
+    font-size:24px;
     height:46px;
     line-height:46px;
+    cursor:pointer;
+    text-decoration: none;
+    color:rgb(240, 240, 240);
+};
+
+.navbar-list-item:hover, .navbar-list-item a:hover{
+    color:white;
 }
 
 .focus-nav-icon{
     background:#4BD575;
     padding:0px 30px;
     border-radius: 32px;
+};
+
+.focus-nav-icon:hover{
+    background:#53ee81;
+    cursor:pointer;
+}
+
+
+@media only screen and (max-width:768px){
+    nav{
+        background:none;
+    }
 }

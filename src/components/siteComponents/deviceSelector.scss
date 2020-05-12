@@ -1,0 +1,29 @@
+.device-selector{
+    background:#7AD596;
+    margin:10px;
+    min-width:200px;
+    max-width:400px;
+    max-height:200px;
+    padding:20px;
+    border-radius: 10px;
+    border:none;
+    transition: all 0.2s ease-in-out;
+
+    h3{
+        text-align: center;
+        margin:0px auto;
+        padding:0px;
+        color:white;
+        font-size: 24px;
+        font-family:'Varela-Round', helvetica, sans-serif;
+    }
+}
+
+.device-selector:hover{
+    background:rgb(134, 233, 163);
+}
+
+.help-device-icon{
+    max-height: 100px;
+    margin:10px;
+}

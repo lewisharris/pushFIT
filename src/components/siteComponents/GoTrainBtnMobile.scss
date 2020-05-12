@@ -1,0 +1,19 @@
+.go-train-mobile-btn{
+        border:none;
+        background:#7AD596;
+        color:#FAFBFB;
+        height:30px;
+        width:120px;
+        font-size:16px;
+        border-radius: 100px;
+        font-family:'Varela-Round', helvetica, sans-serif;
+        position: absolute;
+        top:3vh;
+        right:150px;
+    }
+    
+    @media only screen and (max-width:324px){
+    .go-train-mobile-btn{
+        display:none;
+    }
+}

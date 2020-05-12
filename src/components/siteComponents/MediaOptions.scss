@@ -1,0 +1,20 @@
+.media-options{
+    max-width:25vw;
+    min-width:200px;
+    margin:0px 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-family:'Varela-Round', helvetica, sans-serif;
+}
+.media-options-img{
+    max-height:25vw;
+    max-width:75vw;
+    min-height:200px;
+}
+.media-options-text{
+    color:#2C363F;
+    font-size:24px;
+    text-align: center;
+}
