@@ -7,13 +7,16 @@ nav{
         padding:0px;
         margin:0px;
 };
-
+.router-link{
+    text-decoration: none;
+}
 .logo{
     height:100%;
     position:absolute;
     top:1.8vh;
     left:20px;
     font-size:30px;
+    cursor:default;
 }
 .site-logo{
     width:50px;
@@ -32,7 +35,7 @@ nav{
     align-items: center;
 }
 
-.navbar-list-item, .navbar-list-item a{
+.navbar-list-item{
     margin:0px 20px;
     padding:0px;
     font-size:24px;

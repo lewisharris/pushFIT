@@ -1,9 +1,10 @@
 import React from 'react';
 import './GetStartedBtn.scss';
+import { Link } from "react-router-dom";
 
 const GetStartedBtn = (props) => {
         return(
-            <button className='GetStartedBtn' onClick={() => {props.toggle('Home'); props.toggle('PushFitApp')}}>Get Started</button>        
+            <Link to="/pushfitapp"> <button className='GetStartedBtn'>Get Started</button> </Link>
             )
 }
 

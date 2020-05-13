@@ -42,8 +42,9 @@ hr{
 };
 
 @media only screen and (max-width:450px){
-    .stats-flex{
-
+    .stats{
+       margin:0px auto 5px auto;
+       width:90vw;
     }
 }
 

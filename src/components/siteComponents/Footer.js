@@ -1,13 +1,9 @@
 import React from 'react';
 import './Footer.scss'
+import {Link} from "react-router-dom";
 
 class Footer extends React.Component {
 
-
-    handleClick = () => {
-        this.props.toggle('Help')
-        this.props.toggle('About')
-    }
 
     render(){
         return(
@@ -15,8 +11,8 @@ class Footer extends React.Component {
                 <div>
                     <h2>Explore</h2>
                     <ul className="footer-list">
-                        <li className="footer-list-item">Get Started</li>
-                        <li className="footer-list-item" onClick={this.handleClick}>Help Guide</li>
+                        <Link to="/pushfitapp" className="router-link"><li className="footer-list-item">Get Started</li></Link>
+                        <Link to="/help" className="router-link"><li className="footer-list-item">Help Guide</li></Link>
                     </ul>
                 </div>
                 <a className="footer-portfolio-link" href="https://www.lewharris.co.uk" rel="noopener noreferrer" target="_blank">Designed and Developed by www.lewharris.co.uk</a>

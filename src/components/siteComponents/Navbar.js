@@ -1,15 +1,14 @@
 import React from 'react';
 import './Navbar.scss';
-import Hamburger from './Hamburger';
 import HelpIcon from "./HelpIcon";
 import GoTrainBtnMobile from './GoTrainBtnMobile';
+import { Link } from "react-router-dom";
 
 class Navbar extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            windowWidth:null,
-            goTrain:false
+            windowWidth:null
         }
     }
 
@@ -39,20 +38,15 @@ class Navbar extends React.Component {
 
             {(window.innerWidth > 768)?
             <ul className="navbar-list">
-                <li className="navbar-list-item focus-nav-icon" onClick={() => {this.props.toggle('Home'); this.props.toggle('PushFitApp')}}>Get Started</li>
-                <li className="navbar-list-item"><a href="#">about</a></li>
-                <li className="navbar-list-item"><a href="#">help</a></li>
+                <Link to="/pushfitapp" className="router-link"><li className="navbar-list-item focus-nav-icon">Get Started</li></Link>
+                <Link to="/" className="router-link"><li className="navbar-list-item">about</li></Link>
+                <Link to="/help" className="router-link"><li className="navbar-list-item">help</li></Link>
             </ul>
             :
-            <>
-            <Hamburger toggle = {this.toggle}/>
-            {(this.state.goTrain)? 
                 <>
-                    <GoTrainBtnMobile toggle={this.props.mainToggle}/> 
-                    <HelpIcon toggle={this.props.toggle}/>
+                    <GoTrainBtnMobile/> 
+                    <HelpIcon/>
                 </>
-                : null}
-            </>
             }
             </nav>
         )

@@ -1,14 +1,12 @@
 import React from 'react';
 import './GoTrainBtnMobile.scss';
+import { Link } from "react-router-dom";
 
 const GoTrainBtnMobile = (props) => {
 
-    const handleClick = () => {
-        props.mainToggle('PushFitApp');
-    };
 
     return(
-        <button className="go-train-mobile-btn" onClick={handleClick()} type="button">Go Train</button>
+        <Link to="/pushfitapp"><button className="go-train-mobile-btn" type="button">Go Train</button></Link>
     )
 }
 
