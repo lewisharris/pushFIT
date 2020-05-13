@@ -62,12 +62,10 @@ class Workout extends React.Component {
                 () => {
                     if(this._isMounted === false){
                         clearInterval(this.i)
-                        console.log('cancelled ' + exercise)
                         resolve();
                     }
                     else{
                         this.setCurrent(time, exercise);
-                        console.log(time)
                         if(time < 4 && time > 0){
                             highAudio.play();
                             }

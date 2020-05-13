@@ -1,15 +1,10 @@
 import React from 'react';
 import "./HelpIcon.scss";
+import { Link } from "react-router-dom";
 
 const HelpIcon = props => {
-
-    const handleClick = () => {
-        props.toggle('Help');
-        props.toggle('About')
-    }
-
     return(
-        <button className="help-btn" onClick={ () => handleClick()} type="button">Help</button>
+        <Link to="/help"><button className="help-btn" type="button">Help</button></Link>
     )
 }
 

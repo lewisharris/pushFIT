@@ -3,7 +3,7 @@ import './Hamburger.scss';
 
 const Hamburger = (props) => {
     return(
-        <div className="hamburger" onClick={() => {props.toggle('goTrain')}}>
+        <div className="hamburger">
             <div className="hamburger-top"></div>
             <div className="hamburger-middle"></div>
             <div className="hamburger-bottom"></div>

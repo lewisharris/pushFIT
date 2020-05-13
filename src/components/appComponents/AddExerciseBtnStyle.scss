@@ -22,6 +22,7 @@
     .add-exercise-btn-style{
         height:50px;
         line-height:36px;
+        width:90vw;
     }
 
     .add-exercise-svg{
@@ -32,6 +33,6 @@
 
 @media only screen and (max-width:900px) and (orientation: landscape){
     .add-exercise-btn-style{
-        min-width:90vw;
+        width:90vw;
     }
 }

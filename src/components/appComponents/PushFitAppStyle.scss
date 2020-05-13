@@ -29,8 +29,16 @@
     margin-right:10px;
 }
 
-.main-logo{
-    margin:0px 45px;
+.router-link{
+    text-decoration: none;
+}
+
+.app-logo{
+    position: absolute;
+    top:1vh;
+    right:3vw;
+    max-width:30px;
+    cursor: default;
 }
 
 h1{
@@ -47,7 +55,7 @@ button{
 @media only screen and (max-width:450px){
 
     .app-container{
-        padding-top:20px;
+        padding-top:00px;
     }
     h1{ margin:0px;
         font-size:16px;
@@ -55,11 +63,17 @@ button{
     }
 
     .leave-app{
-        display:none
+        font-size:10px;
+        padding-top:10px;
     };
 
-    .main-logo{
-        display:none;
+    .leave-app-arrow{
+        width: 3px;
+        height:3px;
+        border-left:solid 1px grey;
+        border-bottom:solid 1px grey;
+        transform: rotate(45deg);
+        margin-right:3px;
     }
 }
 
@@ -73,11 +87,4 @@ button{
         color:#A3A3A7;
     }
 
-    .leave-app{
-        display:none
-    };
-
-    .main-logo{
-        display:none;
-    }
 }

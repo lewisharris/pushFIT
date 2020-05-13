@@ -31,25 +31,25 @@ class Help extends React.Component {
     
     render(){
         return(
-            <div className="help">
-                <Hero image="/images/help.svg" heroHeader='Getting Stuck?' heroText='Follow this guide to get started'/>
-                <div className="help-content">
-                    {(this.state.backBtn)? <h2>Follow the step by step guide</h2>
-                        : <h2 >Which Device are you using?</h2>}
-                    <div className="help-options-container">
-                        {(this.state.btn)? <DeviceSelector device = "mobile" deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
-                            : null}
-                        {(this.state.btn)? <DeviceSelector device = "desktop" deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
-                            : null}
-                        {(this.state.mobile)? <HelpGallery media="mobile"/>
-                            : null}
-                        {(this.state.desktop)? <HelpGallery media="desktop"/>
+                <div className="help">
+                    <Hero image="/images/help.svg" heroHeader='Getting Stuck?' heroText='Follow this guide to get started'/>
+                    <div className="help-content">
+                        {(this.state.backBtn)? <h2>Follow the step by step guide</h2>
+                            : <h2 >Which Device are you using?</h2>}
+                        <div className="help-options-container">
+                            {(this.state.btn)? <DeviceSelector device = "mobile" deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
+                                : null}
+                            {(this.state.btn)? <DeviceSelector device = "desktop" deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
+                                : null}
+                            {(this.state.mobile)? <HelpGallery media="mobile"/>
+                                : null}
+                            {(this.state.desktop)? <HelpGallery media="desktop"/>
+                                : null}
+                        </div>
+                        {(this.state.backBtn)? <BackButton mobile= {this.state.mobile} desktop = {this.state.desktop} deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
                             : null}
                     </div>
-                    {(this.state.backBtn)? <BackButton mobile= {this.state.mobile} desktop = {this.state.desktop} deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
-                        : null}
-                </div>
-            </div>
+                </div> 
         )
     }
 }
