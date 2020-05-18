@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-nav{
+
+.main-nav{
     width:100vw;
     height:10vh;
     max-height:80px;
@@ -19,7 +19,7 @@ nav{
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: inherit;
+
 }
 .router-link{
     text-decoration: none;
