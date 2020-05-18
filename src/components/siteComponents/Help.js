@@ -42,9 +42,9 @@ class Help extends React.Component {
                         {(this.state.backBtn)? <BackButton mobile= {this.state.mobile} desktop = {this.state.desktop} deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
                             : null}
                         <div className="help-options-container">
-                            {(this.state.btn)? <DeviceSelector device = "Mobile" icon = {mobileIconImg} deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
+                            {(this.state.btn)? <DeviceSelector device = "mobile" icon = {mobileIconImg} deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
                                 : null}
-                            {(this.state.btn)? <DeviceSelector device = "Desktop" icon = {desktopIconImg} deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
+                            {(this.state.btn)? <DeviceSelector device = "desktop" icon = {desktopIconImg} deviceBtn="btn" backBtn="backBtn" toggle ={this.toggleSlides}/>
                                 : null}
                             {(this.state.mobile)? <HelpGallery media="mobile"/>
                                 : null}
