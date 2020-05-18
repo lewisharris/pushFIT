@@ -1,0 +1,104 @@
+.form-style {
+    background:#303038;
+    max-width:450px;
+    min-height:50vh;
+    border-radius:10px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    margin:10px auto;
+    text-align:center;
+};
+
+#input-title{
+font-size:16px;
+font-weight:bold;
+color:#75757B;
+
+}
+
+#exercise-input{
+max-width:80%;
+height:36px;
+background:#393941;
+color:white;
+border:none;
+margin:20px auto 0px auto;
+font-size:26px;
+padding:5px;
+text-align: center;
+outline: 0;
+border-bottom: solid 2px #393941;
+font-family: 'Varela Round', sans-serif;
+};
+
+#exercise-input::-webkit-input-placeholder{
+font-size:24px;
+font-family: 'Varela Round', sans-serif;
+}
+
+#exercise-input::-moz-placeholder{
+font-size:24px;
+font-family: 'Varela Round', sans-serif;
+}
+
+#exercise-input:-ms-input-placeholder{
+font-size:24px;
+font-family: 'Varela Round', sans-serif;
+}
+
+#exercise-input::-ms-input-placeholder{
+font-size:24px;
+font-family: 'Varela Round', sans-serif;
+}
+
+#exercise-input::placeholder{
+font-size:24px;
+font-family: 'Varela Round', sans-serif;
+}
+
+#exercise-input:focus{
+-webkit-animation: input-anim 0.5s linear 0s 1 forwards;
+    animation: input-anim 0.5s linear 0s 1 forwards;
+}
+
+@-webkit-keyframes input-anim {
+0%{border-bottom: solid 2px #393941};
+50%{border-bottom:solid 2px #4E5AC2};
+100%{border-bottom:solid 2px #393941};
+}
+
+@keyframes input-anim {
+0%{border-bottom: solid 2px #393941};
+50%{border-bottom:solid 2px #4E5AC2};
+100%{border-bottom:solid 2px #393941};
+}
+
+#form-line-break{
+margin:40px auto;
+}
+
+@media only screen and (max-width:450px){
+.form-style {
+margin:0px 10px 10px 10px;
+border-radius: 0px 0px 10px 10px;
+}
+}
+
+@media only screen and (max-width:900px) and (orientation: landscape){
+.form-style{
+min-height:auto;
+max-height:70vh;
+};
+#form-line-break{
+margin:20px auto;
+width:30vw;
+}
+}

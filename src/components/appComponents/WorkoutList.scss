@@ -1,0 +1,85 @@
+p{
+    color:#75757B;
+}
+
+.exercise-header{
+    min-width:50%;
+}
+.time-header{
+    text-align:right;
+    margin-right: 13vw;
+}
+
+.workout-list-scroller{
+    overflow:scroll;
+    position: relative;
+    height:85%;
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+    padding:0px;
+    -webkit-box-shadow: inset 3px 30px 10px 0 #303038;
+            box-shadow: inset 3px 30px 10px 0 #303038;
+}
+.workout-list{
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+    min-width:60vw;
+    background:#303038;
+    border-radius:10px;
+    margin:0px 5px 10px 5px;
+    padding-bottom:30px;
+    max-height: 470px;
+    overflow: hidden;
+    position: relative;
+}
+.workout-list::after
+{
+ -webkit-box-shadow: inset 0px -30px 10px 0 #303038;
+         box-shadow: inset 0px -30px 10px 0 #303038;
+ content: '';
+ display: block;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ pointer-events: none;
+}
+
+
+.workout-list-header-flex{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+}
+
+@media only screen and (max-width:450px){
+    .workout-list{
+        -webkit-box-flex: 2;
+            -ms-flex-positive: 2;
+                flex-grow: 2;
+        margin:10px 0px;
+        max-height:350px;
+        min-width:90vw;
+    }
+}
+
+@media only screen and (max-width:900px) and (orientation: landscape){
+    .workout-list{
+        min-width:90vw;
+        -webkit-box-flex: 2;
+            -ms-flex-positive: 2;
+                flex-grow: 2;
+        margin:10px 15px;
+        max-height:350px;
+    }
+}

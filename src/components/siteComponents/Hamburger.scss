@@ -1,0 +1,59 @@
+.hamburger{
+    position:absolute;
+    top:3.3vh;
+    right:20px;
+    width:25px;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+@mixin hamburger-line {
+    height:2px;
+    background:#8f8f8f;
+    margin:3px 0px;
+    float:right;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.hamburger-top{
+    @include hamburger-line;
+    width:100%;
+}
+
+.hamburger-middle{
+    @include hamburger-line;
+    width:70%;
+}
+
+.hamburger-bottom{
+    @include hamburger-line;
+    width:40%;
+}
+
+.hamburger:hover .hamburger-top{
+    background:white;
+    -webkit-transform:rotate(90deg);
+        -ms-transform:rotate(90deg);
+            transform:rotate(90deg);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+}
+
+.hamburger:hover .hamburger-middle{
+    opacity:0;
+}
+
+.hamburger:hover .hamburger-bottom{
+    background:white;
+    -webkit-transform:rotate(-90deg);
+        -ms-transform:rotate(-90deg);
+            transform:rotate(-90deg);
+    width:100%;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+}

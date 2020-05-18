@@ -1,0 +1,31 @@
+.end-workout{
+    width:60%;
+    max-width:400px;
+    height:46px;
+    background:#ED747D;
+    color:#303038;
+    border:none;
+    font-size:20px;
+    font-weight:bold;
+    border-radius: 5px;
+    margin:10px auto;
+    font-family: 'Varela Round', sans-serif;
+    line-height: 46px;
+}
+
+.end-workout:hover{
+    background:#BF5C63;
+    -webkit-box-shadow: inset 4px 4px 4px rgba(255,255,255,0.1);
+            box-shadow: inset 4px 4px 4px rgba(255,255,255,0.1);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+};
+
+@media only screen and (max-width:450px){
+    .end-workout{
+        width:auto;
+        min-width:280px;
+        margin: 0px;
+    }
+}

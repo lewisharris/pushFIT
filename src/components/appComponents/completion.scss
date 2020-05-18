@@ -1,0 +1,33 @@
+.completion-style    {
+    background:#303038;
+    min-width:324px;
+    border-radius:10px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    margin:10px;
+    padding-bottom:10px;
+    -webkit-box-flex:2;
+        -ms-flex-positive:2;
+            flex-grow:2;
+    border: 5px solid #303038;
+    -webkit-box-shadow: -5px -5px 5px rgba(255,255,255,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.05),
+                5px 5px 5px rgba(0,0,0,0.3),
+                inset 5px 5px 5px rgba(0,0,0,0.3);
+            box-shadow: -5px -5px 5px rgba(255,255,255,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.05),
+                5px 5px 5px rgba(0,0,0,0.3),
+                inset 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+#progress-container{
+    width:150px;
+    height:150px;
+    margin:20px auto;
+    
+}

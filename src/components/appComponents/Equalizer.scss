@@ -1,0 +1,80 @@
+.eq{
+    width:100px;
+    height:70px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align:end;
+        -ms-flex-align:end;
+            align-items:flex-end;
+    margin:10px;
+}
+
+.eq-bar{
+    width:10px;
+    border-radius: 5px;
+    height:40px;
+    display: inline-block;
+    margin:3px;
+    -webkit-animation-name: pulse;
+            animation-name: pulse;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-timing-function: cubic-bezier(.25,.79,.55,.99);
+            animation-timing-function: cubic-bezier(.25,.79,.55,.99);
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+    0%{height:20px;}
+    50%{height:70px;}
+    100%{height:20px;}
+}
+
+@keyframes pulse {
+    0%{height:20px;}
+    50%{height:70px;}
+    100%{height:20px;}
+}
+
+#bar-1{
+    background:#7AD596;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+#bar-2{
+    background:#7AD596;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+#bar-3{
+    background:#F4B74B;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+}
+#bar-4{
+    background:#F4B74B;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+}
+#bar-5{
+    background:#ED747D;
+    -webkit-animation-delay: 0.55s;
+            animation-delay: 0.55s;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+}
+#bar-6{
+    background:#ED747D;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+}

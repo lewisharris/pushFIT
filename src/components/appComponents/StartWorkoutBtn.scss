@@ -1,0 +1,47 @@
+.start-workout{
+    width:324px;
+    height:88px;
+    background:#7AD596;
+    border:none;
+    padding:0px;
+    font-size:27px;
+    font-weight:bold;
+    border-radius:10px;
+    color:#303038;
+    margin:5px;
+    cursor:pointer;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.start-workout:hover{
+    background:rgb(118, 241, 155);
+}
+
+.start-workout-fail{
+    @extend .start-workout;
+    background:#ED747D;
+}
+
+.start-workout-fail:hover{
+    @extend .start-workout-fail;
+    background:#ED747D;
+}
+
+
+
+@media only screen and (max-width:450px){
+    .start-workout{
+        height:50px;
+        font-size:16px;
+        line-height:50px;
+        width:90vw;
+        margin:5px auto;
+    }
+
+}
+
+@media only screen and (max-width:900px) and (orientation: landscape){
+    .start-workout{
+        min-width:90vw;
+    }
+}

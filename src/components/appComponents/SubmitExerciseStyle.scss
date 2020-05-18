@@ -1,0 +1,80 @@
+.submit-exercise{
+    background:#303038;
+    max-width:450px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row;
+    -webkit-box-pack:space-evenly;
+        -ms-flex-pack:space-evenly;
+            justify-content:space-evenly;
+    height:58px;
+    margin:0px auto;
+    border-radius:10px;
+    border:none;
+}
+
+.submit-buttons{
+    border:none;
+    margin:5px;
+    font-size:16px;
+    font-weight:bold;
+    background:none;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius:0px 10px 10px 0px;
+    outline:none;
+    font-family: 'Varela Round', sans-serif;
+};
+
+.error-buttons{
+    @extend .submit-buttons;
+    -webkit-filter:hue-rotate(232deg) saturate(700%);
+            filter:hue-rotate(232deg) saturate(700%);
+}
+
+#add-to-list{
+    color:#7AD596;
+}
+
+#view-list{
+    color:#4E5AC2;
+}
+
+#submit-divider{
+    width:2px;
+    height: 70%;
+    background:#393941;
+    margin: auto 5px;
+}
+
+#add-to-list-icon,#view-workout-icon{
+    width:20px;
+    margin:10px;
+}
+
+@media only screen and (max-width:450px){
+    .submit-exercise{
+        margin:5px 10px auto 10px;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .submit-buttons{
+            font-size:12px;
+    }
+}
