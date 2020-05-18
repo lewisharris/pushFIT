@@ -14,9 +14,9 @@ class About extends React.Component {
                     <div className="media-options-flex-container">
                         <h2 className="media-options-header">Workout anywhere</h2>
                         <div className="media-options-flex">
-                            <MediaOptions img="images/mobile.svg" text="Workout using mobile"/>
-                            <MediaOptions img="images/desktop.svg" text="PC or laptop"/>
-                            <MediaOptions img="images/tv.svg" text="TV"/>
+                            <MediaOptions img="./images/mobile.svg" text="Workout using mobile"/>
+                            <MediaOptions img="./images/desktop.svg" text="PC or laptop"/>
+                            <MediaOptions img="./images/tv.svg" text="TV"/>
                         </div>
                     </div>
 
