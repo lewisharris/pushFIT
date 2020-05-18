@@ -9,7 +9,7 @@ class About extends React.Component {
     render(){
         return(
                 <div>
-                    <Hero image="/images/sofa.svg" heroHeader='Get fit during the lockdown' heroText='Workout from your living room'/>
+                    <Hero image="/images/sofa-image.svg" heroHeader='Get fit during the lockdown' heroText='Workout from your living room'/>
 
                     <div className="media-options-flex-container">
                         <h2 className="media-options-header">Workout anywhere</h2>

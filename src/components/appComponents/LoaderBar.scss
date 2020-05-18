@@ -1,5 +1,5 @@
 .loader-main{
-    margin:50px auto;
+    margin:0px auto;
     text-align: center;
 }
 
@@ -7,17 +7,22 @@
     width:50vw;
     height:10px;
     border:solid 2px white;
-    margin:50px auto;
+    margin:0px auto;
     border-radius:10px;
-    animation: load-animation 5s linear 0s 1 forwards;
+    -webkit-animation: load-animation 5s linear 0s 1 forwards;
+            animation: load-animation 5s linear 0s 1 forwards;
 };
 
 .loader-countdown{
     font-size:48px;
 }
 
-@keyframes load-animation {
-    0%{box-shadow: inset 0px 0 0 0.01px white;}
-    100%{box-shadow: inset 50vw 0 0 0 white;}
+@-webkit-keyframes load-animation {
+    0%{-webkit-box-shadow: inset 0px 0 0 0.01px white;box-shadow: inset 0px 0 0 0.01px white;}
+    100%{-webkit-box-shadow: inset 50vw 0 0 0 white;box-shadow: inset 50vw 0 0 0 white;}
 }
 
+@keyframes load-animation {
+    0%{-webkit-box-shadow: inset 0px 0 0 0.01px white;box-shadow: inset 0px 0 0 0.01px white;}
+    100%{-webkit-box-shadow: inset 50vw 0 0 0 white;box-shadow: inset 50vw 0 0 0 white;}
+}

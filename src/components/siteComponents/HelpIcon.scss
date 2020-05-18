@@ -12,8 +12,14 @@
     right:60px;
 }
 
-@media only screen and (max-width:324px){
+.help-btn:hover{
+    background:#4651af;
+}
+
+@media only screen and (max-width:460px){
 .help-btn{
-    display:none;
+    top:3vh;
+    right:5vw;
+    font-weight:600;
 }
 }

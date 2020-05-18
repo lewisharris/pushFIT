@@ -8,62 +8,62 @@ class HelpGallery extends React.Component {
             count:0,
             mobile: [
                 {   id:0,
-                    image:"images/display-example.png",
-                    header: 'mobile step 1',
-                    desc:'this is where the description goes 1'      
+                    image:"images/mobile-step-1.jpg",
+                    header: 'Enter your exercise',
+                    desc:"Enter your chosen exercise and select the duration you want to perform it for, Then simply hit enter or 'Add Exercise' to add to your workout. To then view your workout, click the 'View Workout' Icon"     
                 },
                 {   id:1,
-                    image:"mobile-image-2.jpg",
-                    header: 'mobile step 2',
-                    desc:'this is where the description goes 2'      
+                    image:"images/mobile-step-2.jpg",
+                    header: 'Review your workout',
+                    desc:"Your exercise will appear in the list also showing the duration circle, with green for easy, amber for avergage, and red for hard. To add new exercises hit the 'Add a new Exercise' button which will take you to the previous page."      
                 },
                 {   id:2,
-                    image:"mobile-image-3.jpg",
-                    header: 'mobile step 3',
-                    desc:'this is where the description goes 3'      
+                    image:"images/mobile-step-3.jpg",
+                    header: 'Adjust rest period and start workout',
+                    desc:'Choose your chosen rest period. This will be the time allocated between each exercise. Then start workout.'      
                 },
                 {   id:3,
-                    image:"mobile-image-4.jpg",
-                    header: 'mobile step 4',
-                    desc:'this is where the description goes 4'      
+                    image:"images/mobile-step-4.jpg",
+                    header: 'Start Workout',
+                    desc:'Your workout will begin with the countdown timer running. Perform the exercise until the timer runs out and then rest.'      
                 },
                 {   id:4,
-                    image:"mobile-image-5.jpg",
-                    header: 'mobile step 5',
-                    desc:'this is where the description goes 5'      
+                    image:"images/mobile-step-5.jpg",
+                    header: 'Take a rest',
+                    desc:'During the rest period, the next exercise will be shown so you can get ready.'      
                 }
             ],
             desktop: [
                 {   id:0,
-                    image:"desktop-image-1.jpg",
-                    header: 'desktop step 1',
-                    desc:'this is where the description goes 1'      
+                    image:"images/desktop-step-1.jpg",
+                    header: 'Enter your exercise',
+                    desc:"Enter your chosen exercise and select the duration you want to perform it for, Then simply hit enter or 'Add Exercise' to add to your workout. To then view your workout, click the 'View Workout' Icon"      
                 },
                 {   id:1,
-                    image:"desktop-image-2.jpg",
-                    header: 'desktop step 2',
-                    desc:'this is where the description goes 2'      
+                    image:"images/desktop-step-2.jpg",
+                    header: 'Review your workout',
+                    desc:"Your exercise will appear in the list also showing the duration circle, with green for easy, amber for avergage, and red for hard. To add new exercises hit the 'Add a new Exercise' button which will take you to the previous page."      
                 },
                 {   id:2,
-                    image:"desktop-image-3.jpg",
-                    header: 'desktop step 3',
-                    desc:'this is where the description goes 3'      
+                    image:"images/desktop-step-3.jpg",
+                    header: 'Adjust rest period and start workout',
+                    desc:'Choose your chosen rest period. This will be the time allocated between each exercise. Then start workout.'      
                 },
                 {   id:3,
-                    image:"desktop-image-4.jpg",
-                    header: 'desktop step 4',
-                    desc:'this is where the description goes 4'      
+                    image:"images/desktop-step-4.jpg",
+                    header: 'Start Workout',
+                    desc:'Your workout will begin with the countdown timer running. Perform the exercise until the timer runs out and then rest.'      
                 },
                 {   id:4,
-                    image:"desktop-image-5.jpg",
-                    header: 'desktop step 5',
-                    desc:'this is where the description goes 5'      
+                    image:"images/desktop-step-5.jpg",
+                    header: 'Take a rest',
+                    desc:'During the rest period, the next exercise will be shown so you can get ready.'      
                 }
             ]
         }
     }
 
-    handleDecrement = () => {
+    handleDecrement = () => { //move to the previous step in the help gallery
         if(this.state.count > 0){
             this.setState({count:this.state.count -1})
         }
@@ -72,7 +72,7 @@ class HelpGallery extends React.Component {
         }
     };
 
-    handleIncrement = () => {
+    handleIncrement = () => { //move to the next step in the help gallery
         if(this.state.count < this.state[this.props.media].length -1){
             this.setState({count:this.state.count + 1})
         }

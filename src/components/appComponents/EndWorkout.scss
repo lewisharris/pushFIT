@@ -15,7 +15,10 @@
 
 .end-workout:hover{
     background:#BF5C63;
-    box-shadow: inset 4px 4px 4px rgba(255,255,255,0.1);
+    -webkit-box-shadow: inset 4px 4px 4px rgba(255,255,255,0.1);
+            box-shadow: inset 4px 4px 4px rgba(255,255,255,0.1);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 };
 

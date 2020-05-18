@@ -1,7 +1,7 @@
 import React from 'react';
 import './Mouse.scss';
 
-const Mouse = () => {
+const Mouse = props => {
     return(
         <div className="mouse-main">
             <div className="mouse-scroll">

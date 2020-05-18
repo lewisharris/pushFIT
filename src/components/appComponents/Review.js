@@ -1,19 +1,12 @@
 import React from 'react';
 import ReviewDashboard from './ReviewDashboard';
+import './Review.scss';
 
 class Review extends React.Component {
 
     render(){
-        const reviewStyle = {
-            textAlign:'center',
-            width:'100%',
-            margin:'0px auto',
-            background:'#27272F'
-        }
-        
-        
         return(
-            <div style={reviewStyle}>
+            <div className="review-style">
                 <h1>View Workout</h1>
                 <ReviewDashboard    list = {this.props.list}
                                     setRest = {this.props.setRest}

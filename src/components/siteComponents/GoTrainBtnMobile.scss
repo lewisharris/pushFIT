@@ -11,9 +11,18 @@
         top:3vh;
         right:150px;
     }
+
+    .go-train-mobile-btn:hover{
+        background:#6fc288;
+    }
+
+
+
     
-    @media only screen and (max-width:324px){
+    @media only screen and (max-width:460px){
     .go-train-mobile-btn{
-        display:none;
+        top:10vh;
+        right:5vw;
+        font-weight:600;
     }
 }

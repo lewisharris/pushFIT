@@ -17,10 +17,12 @@ p{
     overflow: -moz-scrollbars-vertical; 
     overflow-y: scroll;
     padding:0px;
-    box-shadow: inset 3px 30px 10px 0 #303038;
+    -webkit-box-shadow: inset 3px 30px 10px 0 #303038;
+            box-shadow: inset 3px 30px 10px 0 #303038;
 }
 .workout-list{
-    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
     min-width:60vw;
     background:#303038;
     border-radius:10px;
@@ -32,7 +34,8 @@ p{
 }
 .workout-list::after
 {
- box-shadow: inset 0px -30px 10px 0 #303038;
+ -webkit-box-shadow: inset 0px -30px 10px 0 #303038;
+         box-shadow: inset 0px -30px 10px 0 #303038;
  content: '';
  display: block;
  height: 100%;
@@ -44,15 +47,26 @@ p{
 
 
 .workout-list-header-flex{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    flex-grow: 2;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
 }
 
 @media only screen and (max-width:450px){
     .workout-list{
-        flex-grow: 2;
+        -webkit-box-flex: 2;
+            -ms-flex-positive: 2;
+                flex-grow: 2;
         margin:10px 0px;
         max-height:350px;
         min-width:90vw;
@@ -62,7 +76,9 @@ p{
 @media only screen and (max-width:900px) and (orientation: landscape){
     .workout-list{
         min-width:90vw;
-        flex-grow: 2;
+        -webkit-box-flex: 2;
+            -ms-flex-positive: 2;
+                flex-grow: 2;
         margin:10px 15px;
         max-height:350px;
     }
