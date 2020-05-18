@@ -39,7 +39,7 @@ class Navbar extends React.Component {
             {(window.innerWidth > 768)? // nav bar when desktop
             <ul className="navbar-list">
                 <Link to="/pushfitapp" className="router-link"><li className="navbar-list-item focus-nav-icon">Get Started</li></Link>
-                <Link to="/pushFIT" className="router-link"><li className="navbar-list-item">about</li></Link>
+                <Link to="/" className="router-link"><li className="navbar-list-item">about</li></Link>
                 <Link to="/help" className="router-link"><li className="navbar-list-item">help</li></Link>
             </ul>
             : // alternate navbar when mobile/tablet
