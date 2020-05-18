@@ -5,6 +5,7 @@ import Workout from './Workout';
 import Intro from './Intro';
 import './PushFitAppStyle.scss';
 import { Link } from "react-router-dom";
+import pushFitLogoImg from "../../images/pushfit-logo.svg";
 
 class PushFitApp extends React.Component {
     constructor(props){
@@ -102,7 +103,7 @@ class PushFitApp extends React.Component {
     render(){
         return(
             <div className='app-container'>
-                <img src="images/pushfit-logo.svg" alt="pushfit" className="app-logo"></img>
+                <img src={pushFitLogoImg} alt="pushfit" className="app-logo"></img>
                 <Link to="/" className="router-link"><button className="leave-app"><div className='leave-app-arrow'></div>Leave App</button></Link>
                 
                 {(this.state.Input === false) ? null

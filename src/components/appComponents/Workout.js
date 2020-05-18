@@ -5,7 +5,9 @@ import Completion from './Completion';
 import CurrentExercise from './CurrentExercise';
 import EndWorkout from './EndWorkout';
 import MobileOptions from './MobileOptions';
-import MediaQuery from 'react-responsive'
+import MediaQuery from 'react-responsive';
+import highBeep from '../../sounds/high-beep.mp3';
+import lowBeep from '../../sounds/low-beep.mp3';
 
 class Workout extends React.Component {
     constructor(props){
@@ -21,7 +23,7 @@ class Workout extends React.Component {
     }
 
     runTimer = () => { // run the Workout
-        var lowAudio = new Audio('./sounds/low-beep.mp3');
+        var lowAudio = new Audio(lowBeep);
         lowAudio.play();
         let p = Promise.resolve();
         for (let e of this.state.list) {
@@ -56,8 +58,8 @@ class Workout extends React.Component {
 
     countdown = (time, exercise) => { // create the countdown
     return new Promise(resolve => {
-        var highAudio = new Audio('./sounds/high-beep.mp3');
-        var lowAudio = new Audio('./sounds/low-beep.mp3');
+        var highAudio = new Audio(highBeep);
+        var lowAudio = new Audio(lowBeep);
             this.i = setInterval(
                 () => {
                     if(this._isMounted === false){

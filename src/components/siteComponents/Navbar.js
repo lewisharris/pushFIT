@@ -3,6 +3,7 @@ import './Navbar.scss';
 import HelpIcon from "./HelpIcon";
 import GoTrainBtnMobile from './GoTrainBtnMobile';
 import { Link } from "react-router-dom";
+import logo from '../../images/pushfit-logo.svg';
 
 class Navbar extends React.Component {
     constructor(props){
@@ -30,7 +31,7 @@ class Navbar extends React.Component {
             <nav className='main-nav'>
                 <Link to="/" className="router-link">
                     <div className="logo">
-                        <img src="./images/pushfit-logo.svg" alt="pushfit" className="site-logo"></img>
+                        <img src={logo} alt="pushfit" className="site-logo"></img>
                         <span className="router-link">pushFIT</span>
                     </div>
                 </Link>

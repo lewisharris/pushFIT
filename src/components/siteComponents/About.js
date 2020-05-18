@@ -4,30 +4,36 @@ import Hero from './Hero';
 import GetStartedBtn from './GetStartedBtn';
 import MediaOptions from './MediaOptions';
 import DummyProgress from  './DummyProgress';
+import mobileImg from '../../images/mobile.svg';
+import desktopImg from '../../images/desktop.svg';
+import tvImg from '../../images/tv.svg';
+import displayExampleImg from "../../images/display-example.png";
+import AppLinkingImg from '../../images/app-linking.svg';
+import sofaImg from '../../images/sofa-image.svg';
 
 class About extends React.Component {
     render(){
         return(
                 <div>
-                    <Hero image="images/sofa-image.svg" heroHeader='Get fit during the lockdown' heroText='Workout from your living room'/>
+                    <Hero image={sofaImg} heroHeader='Get fit during the lockdown' heroText='Workout from your living room'/>
 
                     <div className="media-options-flex-container">
                         <h2 className="media-options-header">Workout anywhere</h2>
                         <div className="media-options-flex">
-                            <MediaOptions img="./images/mobile.svg" text="Workout using mobile"/>
-                            <MediaOptions img="./images/desktop.svg" text="PC or laptop"/>
-                            <MediaOptions img="./images/tv.svg" text="TV"/>
+                            <MediaOptions img={mobileImg} text="Workout using mobile"/>
+                            <MediaOptions img={desktopImg} text="PC or laptop"/>
+                            <MediaOptions img={tvImg} text="TV"/>
                         </div>
                     </div>
 
                     <div className="section-dark">
-                        <img src="/images/app-linking.svg" alt="link-your-apps" className="section-image"></img>
+                        <img src={AppLinkingImg} alt="link-your-apps" className="section-image"></img>
                         <h2 className="section-header">Seamlessly Connect your favourite songs to fuel your workouts</h2>
                     </div>
 
                     <div className="section-color">
                         <h2 className="section-header">Build a high intensity HIIT workout</h2>
-                        <img src="/images/display-example.png" alt="example-of-app" className="section-image"></img>
+                        <img src={displayExampleImg} alt="example-of-app" className="section-image"></img>
                         <p className="section-light-text">Choose the length of time you want to perform each exercise and your rest period to suit your needs and push your limits.</p>
                     </div>
 

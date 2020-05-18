@@ -1,5 +1,7 @@
 import React from 'react';
 import './SubmitExerciseStyle.scss';
+import viewWorkoutImg from '../../images/view-workout-icon.svg';
+import submitExerciseImg from '../../images/add-to-list-icon.svg';
 
 class SubmitExercise extends React.Component {
     constructor(props){
@@ -38,15 +40,15 @@ class SubmitExercise extends React.Component {
                                                                 onClick={this.handleSubmit} 
                                                                 type="submit" 
                                                                 form="input-form">
-                    <object id="add-to-list-icon" type="image/svg+xml" data="images/add-to-list-icon.svg">
-                            <img src="images/add-to-list-icon.svg" alt="add-to-list"></img>
+                    <object id="add-to-list-icon" type="image/svg+xml" data={submitExerciseImg}>
+                            <img src={submitExerciseImg} alt="add-to-list"></img>
                     </object>               
                         {this.state.buttonText}
                 </button>
             <div id="submit-divider"></div>
                 <button className="submit-buttons" id="view-list" type="button" onClick={this.handleToggle}>
-                    <object id="view-workout-icon" type="image/svg+xml" data="images/view-workout-icon.svg">
-                            <img src="images/view-workout-icon.svg" alt="submit"></img>
+                    <object id="view-workout-icon" type="image/svg+xml" data={viewWorkoutImg}>
+                            <img src={viewWorkoutImg} alt="submit"></img>
                     </object>
                     View Workout
                 </button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './HelpGallery.scss'
+import './HelpGallery.scss';
 
 class HelpGallery extends React.Component {
     constructor(props){
@@ -8,7 +8,7 @@ class HelpGallery extends React.Component {
             count:0,
             mobile: [
                 {   id:0,
-                    image:"images/mobile-step-1.jpg",
+                    image:"../../images/mobile-step-1.jpg",
                     header: 'Enter your exercise',
                     desc:"Enter your chosen exercise and select the duration you want to perform it for, Then simply hit enter or 'Add Exercise' to add to your workout. To then view your workout, click the 'View Workout' Icon"     
                 },

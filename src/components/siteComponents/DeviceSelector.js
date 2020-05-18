@@ -10,7 +10,7 @@ const DeviceSelector = props => {
     }
     return(
         <button className="device-selector" onClick={handleClick}>
-            <img src={'images/' + props.device + '.svg'} alt={props.device + '.svg'} className="help-device-icon"></img>
+            <img src={props.icon} alt={props.device} className="help-device-icon"></img>
             <h3>{props.device}</h3>
         </button>
     )

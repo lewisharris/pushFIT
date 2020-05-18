@@ -1,5 +1,6 @@
 import React from 'react';
 import "./ListItem.scss";
+import deleteIcon from '../../images/delete-icon.svg';
 
 
 const ListItem = props => {
@@ -24,8 +25,8 @@ const ListItem = props => {
             <p className="exercise-text">{props.exercise}</p>
             <div className={circleClass()}>{props.duration}</div>
             <button className="cancel-button" type="button" onClick={props.handleDelete}>
-                <object type="image/svg+xml" data="images/delete-icon.svg" className="delete-icon">
-                    <img src="images/delete-icon.svg" alt="delete"></img>
+                <object type="image/svg+xml" data={deleteIcon} className="delete-icon">
+                    <img src={deleteIcon} alt="delete"></img>
                 </object>
             </button>
         </li>

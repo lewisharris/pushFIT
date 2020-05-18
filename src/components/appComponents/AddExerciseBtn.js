@@ -1,5 +1,6 @@
 import React from 'react';
-import './AddExerciseBtnStyle.scss'
+import './AddExerciseBtnStyle.scss';
+import addExerciseImg from '../../images/add-exercise-icon.svg';
 
 class AddExerciseBtn extends React.Component {
 
@@ -14,8 +15,8 @@ class AddExerciseBtn extends React.Component {
         return(
             <React.Fragment>
                 <button className="add-exercise-btn-style" onClick={this.handleClick}>
-                    <object type="image/svg+xml" data="images/add-exercise-icon.svg" className='add-exercise-svg'>
-                        <img src="images/add-exercise-icon.svg" alt="add-exercise"></img>
+                    <object type="image/svg+xml" data={addExerciseImg} className='add-exercise-svg'>
+                        <img src={addExerciseImg} alt="add-exercise"></img>
                     </object>   
                     Add a New Exercise
                 </button>
