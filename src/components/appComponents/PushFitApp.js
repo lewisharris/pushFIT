@@ -104,7 +104,7 @@ class PushFitApp extends React.Component {
         return(
             <div className='app-container'>
                 <img src={pushFitLogoImg} alt="pushfit" className="app-logo"></img>
-                <Link to="/" className="router-link"><button className="leave-app"><div className='leave-app-arrow'></div>Leave App</button></Link>
+                <Link to="/pushFIT" className="router-link"><button className="leave-app"><div className='leave-app-arrow'></div>Leave App</button></Link>
                 
                 {(this.state.Input === false) ? null
                 :

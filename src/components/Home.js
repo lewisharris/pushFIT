@@ -28,7 +28,7 @@ const Home = props => {
 
                     {(checkWindowSize === true)? <Hamburger/> : null}
                     <Switch>
-                        <Route path="/" exact basename={process.env.PUBLIC_URL} component={About}/>
+                        <Route path="/pushFIT" exact basename={process.env.PUBLIC_URL} component={About}/>
                         <Route path="/help" component={Help}/>
                         <Route path="/pushfitapp" component={PushFitApp}/>
                     </Switch>
