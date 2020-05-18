@@ -91,11 +91,6 @@ class HelpGallery extends React.Component {
             return
         }
     };
-
-    componentDidMount(){
-        console.log('mounted' + this.props.media)
-    }
-
     render(){
         const count = this.state.count;
         const media = this.props.media;
