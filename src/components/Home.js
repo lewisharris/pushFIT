@@ -23,20 +23,17 @@ const Home = props => {
     window.addEventListener('resize', checkWindowSize);
 
         return(
-            <Route>
                 <div>
                     {(location.pathname.indexOf('pushfitapp') > -1)? null : <Navbar/>}
 
                     {(checkWindowSize === true)? <Hamburger/> : null}
-                    
                     <Switch>
-                        <Route path="/" exact component={About}/>
+                        <Route path="/" exact basename={process.env.PUBLIC_URL} component={About}/>
                         <Route path="/help" component={Help}/>
                         <Route path="/pushfitapp" component={PushFitApp}/>
                     </Switch>
                     {(location.pathname.indexOf('pushfitapp') > -1)? null : <Footer/>}
                 </div>
-            </Route>
         )
 };
 export default Home;
