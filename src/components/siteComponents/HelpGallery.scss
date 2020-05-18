@@ -1,8 +1,19 @@
 .gallery-container{
     margin:0px auto;
-    height:100%;
-    width:100%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .gallery-header{
@@ -10,37 +21,38 @@
     font-size:18px;
     text-align: center;
     padding:0px;
-    margin:10px auto;
+    margin:0px auto;
 }
 
 .gallery-image{
-    width:60%;
-    border:solid 2px yellow;
+    width:70%;
     margin:20px;
 }
 
 .gallery-text{
     color:white;
-    font-size:14px;
+    font-size:16px;
     text-align: center;
-    padding:0px;
-    margin-top:100px;
+    padding-bottom:30px;
+    max-width:600px;
+    line-height:2;
 }
 
 @mixin gallery-btn {
     background:rgba(255,255,255,0.2);
     border:none;
-    padding:19px;
     margin:20px;
     border-radius: 500px;
-    width:50px;
-    height:50px;
+    width:5vw;
+    height:5vw;
     overflow: hidden;
-    
 }
+
 .gallery-btn-prev{
     @include gallery-btn;
-    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+        -ms-transform:rotate(90deg);
+            transform:rotate(90deg);
     position: absolute;
     left:0px;
     top:40%;
@@ -48,7 +60,9 @@
 
 .gallery-btn-next{
     @include gallery-btn;
-    transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+        -ms-transform:rotate(-90deg);
+            transform:rotate(-90deg);
     position: absolute;
     right:0px;
     top:40%;
@@ -62,6 +76,8 @@
     top:0px;
     height:0%;
     width:100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -87,8 +103,9 @@
 
 
 @mixin button-icon {
-    width:10px;
-    height:10px;
+    width:1vw;
+    height:1vw;
+    margin:0px auto;
     border-bottom:solid 2px white;
     border-left:solid 2px white;
     z-index:2;
@@ -96,13 +113,34 @@
 
 .button-icon-prev{
     @include button-icon;
-    transform:rotate(315deg);
-    transform-origin:center;
+    -webkit-transform:rotate(315deg);
+        -ms-transform:rotate(315deg);
+            transform:rotate(315deg);
+    -webkit-transform-origin:center;
+        -ms-transform-origin:center;
+            transform-origin:center;
 }
 
 .button-icon-next{
     @include button-icon;
-    transform:rotate(-45deg);
-    transform-origin:center;
+    -webkit-transform:rotate(-45deg);
+        -ms-transform:rotate(-45deg);
+            transform:rotate(-45deg);
+    -webkit-transform-origin:center;
+        -ms-transform-origin:center;
+            transform-origin:center;
 }
 
+@media only screen and (max-width:530px){
+
+    
+    .gallery-btn-prev{
+        @include gallery-btn;
+        top:30%;
+    };
+    
+    .gallery-btn-next{
+        @include gallery-btn;
+        top:30%;
+    }
+}

@@ -66,13 +66,8 @@ class Input extends React.Component {
     }
 
     render(){
-        const inputStyle = {
-            textAlign:'center',
-            width:'100%',
-            margin:'0px auto'
-        }
         return(
-            <div style={inputStyle}>
+            <div className="input-style">
                 <h1>Build Your Workout</h1>
                 <h2 className='input-header-style'>New Exercise</h2>
                 <InputForm  handleInput = {this.handleInput}

@@ -20,11 +20,14 @@ input[type=number]::-webkit-outer-spin-button {
     width:32px;
     background:#5968EB;
     color:#27272F;
+    -webkit-transition: all;
+    -o-transition: all;
     transition: all
 }
 
 .inc-dec:hover{
-    filter:contrast(160%);
+    -webkit-filter:contrast(160%);
+            filter:contrast(160%);
 }
 
 .numInput{

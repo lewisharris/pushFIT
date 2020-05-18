@@ -2,17 +2,17 @@ import React from 'react';
 import './Hero.scss';
 import Mouse from './Mouse';
 
-class Hero extends React.Component {
-    render(){
+const Hero = props => {
         return(
             <div className="hero-container">
-                <img className="hero-image" alt={this.props.image} src={this.props.image}></img>
-                <h1 className="hero-header">{this.props.heroHeader}</h1>
-                <p className="hero-text">{this.props.heroText}</p>
+                <img className="hero-image" alt={props.image} src={props.image}></img>
+                <div>
+                    <h1 className="hero-header">{props.heroHeader}</h1>
+                    <p className="hero-text">{props.heroText}</p>
+                </div>
                 <Mouse/>
             </div>
         )
-    }
 }
 
 export default Hero;

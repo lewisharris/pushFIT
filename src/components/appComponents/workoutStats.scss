@@ -2,9 +2,16 @@
     background:#303038;
     border-radius:10px;
     color:#5968EB;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction:column;
-    flex-grow:0;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -webkit-box-flex:0;
+        -ms-flex-positive:0;
+            flex-grow:0;
     margin:0px 0px 5px 5px;
 }
 
@@ -24,10 +31,19 @@ hr{
     margin:0 8px; 
 }
 .stats-flex{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding:0px 10px;
 }
 

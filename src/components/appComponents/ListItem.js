@@ -14,7 +14,7 @@ const ListItem = props => {
             circleClass = "duration-circle-orange"
         }
         else{
-            circleClass = "duration-circle-green"
+            circleClass = "duration-circle-red"
         }
         return circleClass;
         };

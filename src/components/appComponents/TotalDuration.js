@@ -1,4 +1,5 @@
 import React from 'react';
+import './TotalDuration.scss';
 
 const TotalDuration = (props) => {
 
@@ -20,18 +21,7 @@ const TotalDuration = (props) => {
         return `${minutes}:${seconds}`;
     };
 
-    const totalDurationStyle = {
-        minWidth:23,
-        background:'#5968EB',
-        height:20,
-        color:'#303038',
-        fontWeight:'bold',
-        borderRadius:5,
-        fontSize:16,
-        padding:5,
-        textAlign:'center'
-    }
-    return (<div style={totalDurationStyle}>{totalWorkoutTime()}</div>)
+    return (<div className="total-duration-style">{totalWorkoutTime()}</div>)
 };
 
 export default TotalDuration;

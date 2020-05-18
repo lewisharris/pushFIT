@@ -4,29 +4,17 @@ import WorkoutStats from './WorkoutStats';
 import AddExerciseBtn from './AddExerciseBtn';
 import ClearWorkoutBtn from './ClearWorkoutBtn';
 import StartWorkoutBtn from './StartWorkoutBtn';
+import './ReviewDashboard.scss';
 
 class ReviewDashboard extends React.Component {
 
 
     render(){
-        const reviewDashboardStyle = {
-            margin:'0px auto',
-            display: 'flex',
-            flexDirection:'row',
-            flexWrap:'wrap',
-            justifyContent:'center',
-            padding:20
-        }
-
-        const flexRightStyle = {
-            display:"flex",
-            flexDirection:"column"
-        }
         return(
-            <div style={reviewDashboardStyle}>
+            <div className="review-dashboard-style">
                 <WorkoutList            list = {this.props.list}
                                         delete = {this.props.delete}/>
-                <div style={flexRightStyle}>
+                <div className="flex-right-style">
                     <WorkoutStats       list = {this.props.list}
                                         setRest = {this.props.setRest}
                                         rest = {this.props.rest}
