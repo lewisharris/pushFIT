@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27a640a6c2473f90ff1c6cff1ae75058",
+    "revision": "20826acea5efdfba279883249ce1b1b8",
     "url": "/pushFIT/index.html"
   },
   {
-    "revision": "1c73a95c00ec20aa4fd7",
+    "revision": "b527cf50abbfcf447fe9",
     "url": "/pushFIT/static/css/main.cd2eb145.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pushFIT/static/js/2.7bbfd912.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1c73a95c00ec20aa4fd7",
-    "url": "/pushFIT/static/js/main.47ec3d13.chunk.js"
+    "revision": "b527cf50abbfcf447fe9",
+    "url": "/pushFIT/static/js/main.7bbef4dd.chunk.js"
   },
   {
     "revision": "48074681769961c181f0",
@@ -124,8 +124,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pushFIT/static/media/pushfit-logo.17f3cd33.svg"
   },
   {
-    "revision": "38f957f9e6606469b80babc8adf2200c",
-    "url": "/pushFIT/static/media/sofa-image.38f957f9.svg"
+    "revision": "94b36590df919bb68e478747880c6d8f",
+    "url": "/pushFIT/static/media/sofa-image.94b36590.svg"
   },
   {
     "revision": "b46f47a9a740a9a7dea451b3eef5b562",
