@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pushFIT/static/css/main.b1bcd025.chunk.css",
+    "main.css": "/pushFIT/static/css/main.cd2eb145.chunk.css",
     "main.js": "/pushFIT/static/js/main.47ec3d13.chunk.js",
     "main.js.map": "/pushFIT/static/js/main.47ec3d13.chunk.js.map",
     "runtime-main.js": "/pushFIT/static/js/runtime-main.eea0d0d5.js",
@@ -8,9 +8,9 @@
     "static/js/2.7bbfd912.chunk.js": "/pushFIT/static/js/2.7bbfd912.chunk.js",
     "static/js/2.7bbfd912.chunk.js.map": "/pushFIT/static/js/2.7bbfd912.chunk.js.map",
     "index.html": "/pushFIT/index.html",
-    "precache-manifest.21c672270b145ed1e1ef3f2f68e1e671.js": "/pushFIT/precache-manifest.21c672270b145ed1e1ef3f2f68e1e671.js",
+    "precache-manifest.f9752079640eac2d97ce927e964abdd5.js": "/pushFIT/precache-manifest.f9752079640eac2d97ce927e964abdd5.js",
     "service-worker.js": "/pushFIT/service-worker.js",
-    "static/css/main.b1bcd025.chunk.css.map": "/pushFIT/static/css/main.b1bcd025.chunk.css.map",
+    "static/css/main.cd2eb145.chunk.css.map": "/pushFIT/static/css/main.cd2eb145.chunk.css.map",
     "static/js/2.7bbfd912.chunk.js.LICENSE.txt": "/pushFIT/static/js/2.7bbfd912.chunk.js.LICENSE.txt",
     "static/media/add-exercise-icon.svg": "/pushFIT/static/media/add-exercise-icon.fba20d46.svg",
     "static/media/add-to-list-icon.svg": "/pushFIT/static/media/add-to-list-icon.cba9b4dd.svg",
@@ -44,7 +44,7 @@
   "entrypoints": [
     "static/js/runtime-main.eea0d0d5.js",
     "static/js/2.7bbfd912.chunk.js",
-    "static/css/main.b1bcd025.chunk.css",
+    "static/css/main.cd2eb145.chunk.css",
     "static/js/main.47ec3d13.chunk.js"
   ]
 }
