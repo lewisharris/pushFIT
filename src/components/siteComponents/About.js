@@ -28,7 +28,7 @@ class About extends React.Component {
 
                     <div className="section-dark">
                         <img src={AppLinkingImg} alt="link-your-apps" className="section-image"></img>
-                        <h2 className="section-header">Seamlessly Connect your favourite songs to fuel your workouts</h2>
+                        <h2 className="section-header">Coming soon...Seamlessly Connect your favourite songs to fuel your workouts</h2>
                     </div>
 
                     <div className="section-color">
@@ -38,7 +38,7 @@ class About extends React.Component {
                     </div>
 
                     <div className="section-light">
-                        <h2 className="section-header-dark">Create your own workout or try out the suggested routines</h2>
+                        <h2 className="section-header-dark">Create your own workout</h2>
                         <GetStartedBtn toggle = {this.props.toggle}/>
                     </div>
 
