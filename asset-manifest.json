@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pushFIT/static/css/main.4441787b.chunk.css",
-    "main.js": "/pushFIT/static/js/main.7bbef4dd.chunk.js",
-    "main.js.map": "/pushFIT/static/js/main.7bbef4dd.chunk.js.map",
+    "main.css": "/pushFIT/static/css/main.d958c61e.chunk.css",
+    "main.js": "/pushFIT/static/js/main.f41a8620.chunk.js",
+    "main.js.map": "/pushFIT/static/js/main.f41a8620.chunk.js.map",
     "runtime-main.js": "/pushFIT/static/js/runtime-main.eea0d0d5.js",
     "runtime-main.js.map": "/pushFIT/static/js/runtime-main.eea0d0d5.js.map",
     "static/js/2.7bbfd912.chunk.js": "/pushFIT/static/js/2.7bbfd912.chunk.js",
     "static/js/2.7bbfd912.chunk.js.map": "/pushFIT/static/js/2.7bbfd912.chunk.js.map",
     "index.html": "/pushFIT/index.html",
-    "precache-manifest.04008c7de0a78495c014a14fed3b801d.js": "/pushFIT/precache-manifest.04008c7de0a78495c014a14fed3b801d.js",
+    "precache-manifest.ad3530d520b51066f54fddfa545f8589.js": "/pushFIT/precache-manifest.ad3530d520b51066f54fddfa545f8589.js",
     "service-worker.js": "/pushFIT/service-worker.js",
-    "static/css/main.4441787b.chunk.css.map": "/pushFIT/static/css/main.4441787b.chunk.css.map",
+    "static/css/main.d958c61e.chunk.css.map": "/pushFIT/static/css/main.d958c61e.chunk.css.map",
     "static/js/2.7bbfd912.chunk.js.LICENSE.txt": "/pushFIT/static/js/2.7bbfd912.chunk.js.LICENSE.txt",
     "static/media/add-exercise-icon.svg": "/pushFIT/static/media/add-exercise-icon.fba20d46.svg",
     "static/media/add-to-list-icon.svg": "/pushFIT/static/media/add-to-list-icon.cba9b4dd.svg",
@@ -37,14 +37,14 @@
     "static/media/pause-icon.svg": "/pushFIT/static/media/pause-icon.ceb2d389.svg",
     "static/media/prev-icon.svg": "/pushFIT/static/media/prev-icon.43dd0686.svg",
     "static/media/pushfit-logo.svg": "/pushFIT/static/media/pushfit-logo.17f3cd33.svg",
-    "static/media/sofa-image.svg": "/pushFIT/static/media/sofa-image.94b36590.svg",
+    "static/media/sofa-image.svg": "/pushFIT/static/media/sofa-image.6223afae.svg",
     "static/media/tv.svg": "/pushFIT/static/media/tv.b46f47a9.svg",
     "static/media/view-workout-icon.svg": "/pushFIT/static/media/view-workout-icon.f04ff041.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.eea0d0d5.js",
     "static/js/2.7bbfd912.chunk.js",
-    "static/css/main.4441787b.chunk.css",
-    "static/js/main.7bbef4dd.chunk.js"
+    "static/css/main.d958c61e.chunk.css",
+    "static/js/main.f41a8620.chunk.js"
   ]
 }
