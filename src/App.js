@@ -1,16 +1,14 @@
-import React from 'react';
-import './App.scss';
-import Home from './components/Home'
+import React from "react";
+import "./App.scss";
+import Home from "./components/Home";
 import { HashRouter as Router } from "react-router-dom";
 
-
 class App extends React.Component {
-
-  render(){
+  render() {
     return (
       <Router>
         <div className="App">
-            <Home/>
+          <Home />
         </div>
       </Router>
     );
