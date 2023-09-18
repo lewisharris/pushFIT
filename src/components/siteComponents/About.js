@@ -22,7 +22,7 @@ class About extends React.Component {
         />
 
         <div className="media-options-flex-container">
-          <h2 className="media-options-header">Workout anywhere</h2>
+          <h2 className="media-options-header">Work out anywhere</h2>
           <div className="media-options-flex">
             <MediaOptions img={mobileImg} text="Workout using mobile" />
             <MediaOptions img={desktopImg} text="PC or laptop" />
